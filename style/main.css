@@ -189,13 +189,45 @@ body {
 @media screen and (max-height: 850px) and (max-width: 450px) { .six .hat { left: 32%; } }
 
 @media screen and (max-width: 500px) {
-  .container { width: 90%; }
-  .four .text-box { width: 90%; }
-  .text-box .fake-btn { bottom: -38px; right: 5px; }
-  .idea-5 span { display: block; }
-  .idea-6 span { font-size: 10rem; }
-  .six .hat { width: 50px; }
-  .wish-hbd { font-size: 2.2em; word-spacing: 5px; }
-  .wish h5 { font-size: 1.4rem; }
-  .nine p { font-size: 1.5rem; font-weight: lighter; }
+  .container {
+    width: 95%; /* Dá um pouco mais de respiro que 90% */
+  }
+
+  .four .text-box {
+    width: 95%;
+    box-sizing: border-box; /* Garante que padding e borda não estourem a tela */
+  }
+
+  .text-box .fake-btn {
+    bottom: -38px;
+    right: 5px;
+  }
+
+  /* Removido o display: block do .idea-5 span para a carinha girar certo no próprio eixo */
+
+  .idea-6 span {
+    font-size: 4rem; /* Reduzido de 10rem para caber na matemática da tela */
+  }
+
+  .six img {
+    height: 220px; /* Reduzido de 350px para não estourar a largura no mobile */
+  }
+
+  .six .hat {
+    width: 50px;
+  }
+
+  .wish-hbd {
+    font-size: 2.2em;
+    word-spacing: 5px; /* Mantém o espaçamento corrigido do texto */
+  }
+
+  .wish h5 {
+    font-size: 1.4rem;
+  }
+
+  .nine p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
 }
