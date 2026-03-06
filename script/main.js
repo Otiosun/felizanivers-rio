@@ -38,7 +38,7 @@ const animationTimeline = () => {
     .to(".three", 0.7, { opacity: 0, y: 10 }, "+=3")
     .from(".four", 0.7, { scale: 0.2, opacity: 0 })
     .from(".fake-btn", 0.3, { scale: 0.2, opacity: 0 })
-    .to(".hbd-chatbox span", { visibility: "visible", stagger: 0.02, duration: 0.05 }) // Velocidade ajustada
+    .to(".hbd-chatbox span", { visibility: "visible", stagger: 0.05, duration: 0.05 }) // Velocidade ajustada
     .to(".fake-btn", 0.1, { backgroundColor: "rgb(127, 206, 248)" }, "+=2") 
     .to(".four", 0.5, { scale: 0.2, opacity: 0, y: -150 }, "+=1")
     .from(".idea-1", 0.7, ideaTextTrans)
